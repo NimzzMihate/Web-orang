@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYNS WEB</title>
+    <link rel="stylesheet" href="kyns css.css">
+    <script src="kyns script.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1>HAPPY BIRTHDAY</h1>
+      <img src="apalah.jpg" alt="Foto Kwanku" class="foto-ultah">
+        <p>Happy birthday</p>
+        <button onclick="munculkanSurprise()">CLICK HERE</button>
+        <button onclick="playMusic()">🔊 Putar Musik</button>
+          <button onclick="pauseMusic()">⏸️ Jeda Musik</button>
+        <p id="GATAU"></p>
+        <p style="color: white; margin-top: 20px;">Pilih Lagu:</p>
+<select id="pilihLagu" onchange="gantiLagu()">
+    <option value="monokrom_tulus.mp3">Monokrom - Tulus</option>
+    <option value="beauty.mp3">beauty_and_a_beat-justin</option>
+  <option value="message.mp3">message_in_a_bottle_taylor</option>
+  <audio id="music" src="monokrom_tulus.mp3"></audio>
+  <audio id="music" src="beauty.mp3"></audio>
+  <audio id="music" src="message.mp3"></audio>
+</select>
+    </div>
+    
+  
+  
+<div id="customPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000;">
+    <div style="background: linear-gradient(135deg, #ff7b4a, #ff5722); padding: 30px; border-radius: 40px; text-align: center; color: white; max-width: 300px;">
+        <h2> HAPPY BIRTHDAY </h2>
+        <p style="font-size: 18px;"></p>
+        <button onclick="tutupPopup()" style="background: white; color: #ff5722; border: none; padding: 10px 25px; border-radius: 40px; font-weight: bold; margin-top: 15px;">Tutup</button>
+    </div>
+</div>
+</body>
+</html>
